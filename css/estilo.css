@@ -1,0 +1,315 @@
+/***************fuetes**************/
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bayon&display=swap');
+
+/**************general*******************/
+
+html {
+    font-size: 62, 5%;
+
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    color: #4B4B4B;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/**************************header***************************/
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+    border-bottom: 1px solid #4B4B4B;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+h1 {
+    font-family: 'Rubik Dirt', cursive;
+    color: #EE2D23;
+    font-size: 4rem;
+    margin-left: 2rem;
+    animation: animate__heartBeat;
+    animation-iteration-count: 2;
+    animation-timing-function: ease
+}
+
+.menu ul {
+    display: flex;
+    list-style-type: none;
+
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #4B4B4B;
+    font-size: 2rem;
+    padding: 1rem;
+    font-family: 'Bayon', sans-serif;
+    transition: all 0.5s ease;
+}
+
+.menu ul li a:hover {
+    color: #EE2D23;
+    font-weight: 800;
+}
+
+.iconos i {
+    margin-right: 1rem;
+    display: list-item;
+    list-style-type: none;
+    position: sticky;
+    transition: all 0.5s ease;
+    font-size: 1rem;
+}
+
+.iconos i:hover {
+    font-size: 3rem;
+}
+
+/**************************video fondo******************************/
+
+video {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    left: 0;
+    top: 8rem;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+
+/***************************main****************************/
+
+main {
+
+    height: calc(100vh-8rem);
+
+}
+
+.intro {
+    margin-top: 5rem;
+    width: 100%;
+    font-weight: 800;
+
+
+}
+
+h5 {
+    color: #EE2D23;
+}
+
+
+/*************************articulos***************/
+
+.news {
+    width: 30%;
+    box-shadow: #fafafa 2px 0 1px 1px;
+    animation: fade-left 3s ease;
+
+
+}
+
+.publi {
+    width: 30%;
+    box-shadow: #fafafa 2px 0 1px 1px;
+    animation: fade-right 3s ease;
+
+
+}
+
+.faq ul {
+
+    font-family: 'Gloria Hallelujah', cursive;
+    list-style: none;
+    font-weight: bold;
+    border: 2px solid white;
+    text-align: center;
+    background-color: white;
+    box-shadow: 5px 5px 1px 2px gold;
+    border-radius: 10px;
+    height: 27rem;
+    width: 20rem;
+}
+
+/************************foter***********************/
+
+.pie {
+    height: 8rem;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    color: #4B4B4B;
+    background-color: #fafafa;
+
+    bottom: 0;
+    left: 0;
+}
+
+.pie a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.iconos2 {
+    font-size: 2rem;
+    transition: 1s ease;
+    background-color: #fafafa;
+
+}
+
+.iconos2 i:hover {
+    background: #318aac;
+    color: #EE2D23 !important;
+    background-color: #fafafa;
+
+}
+
+
+/**********************contacto*******************/
+
+.contacto-main {
+    display: grid;
+    grid-column: 1fr 1fr;
+    grid-template-areas: "formulario mapa";
+    background-color: #4B4B4B;
+    color: #EE2D23;
+
+
+}
+
+.formulario {
+    grid-area: formulario;
+    border: 3px solid #EE2D23;
+    height: 80%;
+    width: 75%;
+    border-radius: 6px;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(49deg, rgba(2, 0, 36, 1) 0%, rgba(238, 45, 35, 1) 100%, rgba(83, 83, 83, 1) 100%);
+
+}
+
+.mapa {
+    grid-area: mapa;
+}
+
+h3 {
+    animation: animate__bounceInUp;
+    animation-timing-function: ease
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**********************querys*************************/
+
+/********celu*********/
+
+@media (min-width: 320px) and (max-width: 600px) {
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .contacto-main {
+        grid-column: 1fr;
+        grid-template-areas: "formulario" "mapa";
+    }
+
+    nav {
+        height: 50%;
+    }
+
+    nav ul {
+        background-color: #fafafa;
+    }
+
+    menu ul li {
+        border: #4B4B4B 1px solid;
+    }
+
+    .pie {
+        height: 4rem;
+    }
+
+}
+
+/********tablet*************/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    nav {
+        height: 50%;
+    }
+
+    nav ul {
+        background-color: #fafafa;
+    }
+
+    menu ul li {
+        border: #4B4B4B 1px solid;
+    }
+
+    .pie {
+        height: 6rem;
+        margin-bottom: 5px;
+        font-size: 8px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    nav {
+        height: 50%;
+    }
+
+    nav ul {
+        background-color: #fafafa;
+    }
+
+    menu ul li {
+        border: #4B4B4B 1px solid;
+    }
+
+    .pie {
+        height: 5rem;
+        margin-bottom: 1rem;
+        font-size: 5px;
+    }
+
+    .novedades {
+        flex-direction: column;
+    }
+
+    .news {
+        width: 100%;
+    }
+
+    .publi {
+        width: 100%;
+    }
+}
