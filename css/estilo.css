@@ -84,6 +84,16 @@ video {
     min-height: 100%;
 }
 
+.video2 {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    left: 0;
+    top: 8rem;
+    min-width: 100%;
+    min-height: 100%;
+}
+
 
 /***************************main****************************/
 
@@ -147,9 +157,10 @@ h5 {
     font-weight: bold;
     color: #4B4B4B;
     background-color: #fafafa;
-
+    position: relative;
     bottom: 0;
     left: 0;
+    top: 8rem;
 }
 
 .pie a {
@@ -204,16 +215,37 @@ h3 {
     animation-timing-function: ease
 }
 
+/******************nosotros********************/
+
+.nosotros-main  {
+    background-color: #4B4B4B;
+    color: #fafafa;
+}
 
 
+/***************spots********************/
 
+.main-spots {
+    background-color: #4B4B4B;
+}
 
+h2 {
+    color: #EE2D23;
+}
 
+/********************academia*********************/
 
+.academiahero {
+    font-weight: 800;
+}
 
-
-
-
+.tarjetas {
+    margin-top: 5rem; margin-bottom: 5rem; margin-right: 5rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+}
 
 
 
